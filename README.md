@@ -21,6 +21,8 @@ select location, count(*) from play where year(play_date) = 2021 group by locati
 
 select count(*) from play where year(play_date) = 2021;
 
+select distinct gamename from play where year(play_date) = 2021;
+
 select name, count(*) from player join play on player.play_id = play.id where year(play_date) = 2021 and name not in ('Jens', 'Anonymous player') and name not like 'Bot%' group by name order by 2 desc;
 
 select gamename, count(*) from play where year(play_date) = 2021 group by gamename order by 2 desc, gamename;
