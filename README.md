@@ -14,6 +14,8 @@ Via the [spring.datasource](https://docs.spring.io/spring-boot/docs/current/refe
 
 All further info to start the application could be found in the [Spring Documentation](https://docs.spring.io/spring-boot/docs/current/reference/html/using.html#using.running-your-application).
 
+After starting the application, the data is read from [Boardgamegeek](https://boardgamegeek.com/) and stored in the database.
+You can access the data via the [H2 Console](http://localhost:8080/h2-console) (JDBC URL: see console output).
 
 ## Example SQLs
 ```sql
